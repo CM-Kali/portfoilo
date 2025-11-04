@@ -1,0 +1,153 @@
+/* ====== Global Reset ====== */
+* {
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* ====== Layout Container ====== */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ====== Header Section ====== */
+.header {
+  background: linear-gradient(120deg, #0072ff, #d709b2,#ba5d06);
+  color: #fff;
+  padding: 2.5rem 0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-img img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  font-weight: 300;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* ====== Section Styling ====== */
+.section {
+  margin: 2.5rem 0;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+  border-left: 5px solid #0072ff;
+  padding-left: 10px;
+  margin-bottom: 1.2rem;
+  color: #0072ff;
+  font-weight: 600;
+}
+
+/* ====== Education & Experience ====== */
+.education article, .experience article {
+  margin-bottom: 1rem;
+}
+
+.education h3, .experience h3 {
+  color: #333;
+  font-weight: 600;
+}
+
+.education p, .experience p {
+  color: #555;
+  margin-top: 0.3rem;
+}
+
+/* ====== Skills Section ====== */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skills-grid span {
+  background-color: #0072ff;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+  cursor: default;
+}
+
+.skills-grid span:hover {
+  background-color: #00c6ff;
+  transform: scale(1.05);
+}
+
+/* ====== Contact Section ====== */
+.contact ul {
+  list-style: none;
+  line-height: 2;
+}
+
+.contact a {
+  color: #0072ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact a:hover {
+  color: #00c6ff;
+  text-decoration: underline;
+}
+
+/* ====== Footer ====== */
+.footer {
+  background-color: #0072ff;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  .section {
+    padding: 1.5rem;
+  }
+
+  .skills-grid {
+    justify-content: center;
+  }
+}
